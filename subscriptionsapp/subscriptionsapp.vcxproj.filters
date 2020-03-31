@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\entities">
+      <UniqueIdentifier>{02ee3904-9f8a-4ba0-92ec-67796913a136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\data_layer">
+      <UniqueIdentifier>{eac17677-d3f7-49fd-b5fa-3490b81a2a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\services">
+      <UniqueIdentifier>{86057db8-cb28-41ec-bad1-62efe2c62e32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\commands">
+      <UniqueIdentifier>{10046980-1dec-478b-af91-a772a50607a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\data_layer\serializers">
+      <UniqueIdentifier>{73d3162f-b0bf-4a7f-9bdd-fe719be3917b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\data_layer\repositories">
+      <UniqueIdentifier>{396dd033-757e-42b0-a777-e53f903079e2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="subscriptionsapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="card.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="serializer.h">
+      <Filter>Header Files\data_layer\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="file_provider.h">
+      <Filter>Header Files\data_layer</Filter>
+    </ClInclude>
+    <ClInclude Include="card_serializer.h">
+      <Filter>Header Files\data_layer\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="repository_base.h">
+      <Filter>Header Files\data_layer\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="card_repository.h">
+      <Filter>Header Files\data_layer\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="repository_uow.h">
+      <Filter>Header Files\data_layer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
