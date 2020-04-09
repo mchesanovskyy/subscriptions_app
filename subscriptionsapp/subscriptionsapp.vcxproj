@@ -84,13 +84,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,16 +151,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="card_repository.cpp" />
+    <ClCompile Include="card_serializer.cpp" />
+    <ClCompile Include="file_repository_uow.cpp" />
     <ClCompile Include="subscriptionsapp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="card.h" />
     <ClInclude Include="card_repository.h" />
     <ClInclude Include="card_serializer.h" />
+    <ClInclude Include="date_time.h" />
     <ClInclude Include="file_provider.h" />
+    <ClInclude Include="file_repository_uow.h" />
+    <ClInclude Include="location.h" />
+    <ClInclude Include="pch.h" />
     <ClInclude Include="repository_base.h" />
     <ClInclude Include="repository_uow.h" />
     <ClInclude Include="serializer.h" />
+    <ClInclude Include="subscription.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

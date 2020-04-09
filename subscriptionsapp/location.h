@@ -1,9 +1,10 @@
 #pragma once
 #include "pch.h"
 
-class card
+class location
 {
 public:
 	int id;
-	string number;
+	string name;
 };
+

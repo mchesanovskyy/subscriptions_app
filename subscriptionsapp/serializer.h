@@ -21,18 +21,18 @@ protected:
 	}
 
 	char delimiter_ = '|';
-	vector<string> split(string source, char delimiter)
-	{
-		stringstream ss(source);
-		string item;
-		vector<string> splittedStrings;
-		while (getline(ss, item, delimiter))
-		{
-			splittedStrings.push_back(item);
-		}
-		return splittedStrings;
-	}
+	vector<string> split(string source, char delimiter) const;
 };
 
-
-
+template <class T>
+vector<string> serializer<T>::split(string source, char delimiter) const
+{
+	stringstream ss(source);
+	string item;
+	vector<string> parts;
+	while (getline(ss, item, delimiter))
+	{
+		parts.push_back(item);
+	}
+	return parts;
+}

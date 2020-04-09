@@ -1,6 +1,9 @@
 #include <iostream>
 #include "card_repository.h"
+#include "file_repository_uow.h"
 #include "repository_uow.h"
+
+using namespace std;
 
 int main()
 {
