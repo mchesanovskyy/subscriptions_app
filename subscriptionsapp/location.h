@@ -1,10 +1,11 @@
 #pragma once
-#include "pch.h"
+#include <string>
 
-class location
+#include "entity_base.h"
+
+class location : public entity_base
 {
 public:
-	int id;
-	string name;
+	std::string name;
 };
 

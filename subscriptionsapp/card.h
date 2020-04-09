@@ -1,9 +1,10 @@
 #pragma once
-#include "pch.h"
+#include <string>
 
-class card
+#include "entity_base.h"
+
+class card : public entity_base
 {
 public:
-	int id;
-	string number;
+	std::string number;
 };

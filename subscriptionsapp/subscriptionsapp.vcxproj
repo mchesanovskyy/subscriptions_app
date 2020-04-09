@@ -153,22 +153,42 @@
   <ItemGroup>
     <ClCompile Include="card_repository.cpp" />
     <ClCompile Include="card_serializer.cpp" />
+    <ClCompile Include="card_subscription_repository.cpp" />
+    <ClCompile Include="card_subscription_serializer.cpp" />
+    <ClCompile Include="card_subs_history_repository.cpp" />
+    <ClCompile Include="card_subs_history_serializer.cpp" />
+    <ClCompile Include="date_time.cpp" />
     <ClCompile Include="file_repository_uow.cpp" />
+    <ClCompile Include="location_repository.cpp" />
+    <ClCompile Include="location_serializer.cpp" />
     <ClCompile Include="subscriptionsapp.cpp" />
+    <ClCompile Include="subscription_repository.cpp" />
+    <ClCompile Include="subscription_serializer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="card.h" />
     <ClInclude Include="card_repository.h" />
     <ClInclude Include="card_serializer.h" />
+    <ClInclude Include="card_subscription.h" />
+    <ClInclude Include="card_subscription_repository.h" />
+    <ClInclude Include="card_subscription_serializer.h" />
+    <ClInclude Include="card_subs_history.h" />
+    <ClInclude Include="card_subs_history_repository.h" />
+    <ClInclude Include="card_subs_history_serializer.h" />
     <ClInclude Include="date_time.h" />
+    <ClInclude Include="entity_base.h" />
     <ClInclude Include="file_provider.h" />
     <ClInclude Include="file_repository_uow.h" />
     <ClInclude Include="location.h" />
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="location_repository.h" />
+    <ClInclude Include="location_serializer.h" />
     <ClInclude Include="repository_base.h" />
     <ClInclude Include="repository_uow.h" />
     <ClInclude Include="serializer.h" />
     <ClInclude Include="subscription.h" />
+    <ClInclude Include="subscription_repository.h" />
+    <ClInclude Include="subscription_serializer.h" />
+    <ClInclude Include="test_data.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

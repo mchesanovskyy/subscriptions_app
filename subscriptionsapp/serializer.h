@@ -22,6 +22,20 @@ protected:
 
 	char delimiter_ = '|';
 	vector<string> split(string source, char delimiter) const;
+
+	template <std::size_t size>
+	string join(const string(&parts)[size], char delimiter)
+	{
+		stringstream ss;
+		for (size_t i = 0; i < size; i++)
+		{
+			ss << parts[i];
+			if ((i + 1) < size) {
+				ss << delimiter;
+			}
+		}
+		return ss.str();
+	}
 };
 
 template <class T>

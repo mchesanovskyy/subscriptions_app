@@ -1,5 +1,6 @@
 #pragma once
 #include "file_provider.h"
+#include "entity_base.h"
 
 template <class T>
 class repository_base
@@ -16,18 +17,15 @@ public:
 	virtual vector<T*> get_collection();
 };
 
-
-
 template <class T>
 repository_base<T>::repository_base(file_provider<T>* provider)
 {
+	static_assert(std::is_base_of<entity_base, T>::value, "T must derive from entity_base");
 	provider_ = provider;
 }
 
 template <class T>
-repository_base<T>::~repository_base()
-{
-}
+repository_base<T>::~repository_base() = default;
 
 template <class T>
 vector<T*> repository_base<T>::get_collection()
@@ -38,7 +36,6 @@ vector<T*> repository_base<T>::get_collection()
 template <class T>
 void repository_base<T>::add(T* entity)
 {
+
 	provider_->append(entity);
 }
-
-
