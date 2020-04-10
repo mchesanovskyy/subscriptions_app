@@ -31,10 +31,61 @@
     <Filter Include="Header Files\data_layer\repositories">
       <UniqueIdentifier>{396dd033-757e-42b0-a777-e53f903079e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\data_layer">
+      <UniqueIdentifier>{5e110fda-cb78-4bd5-a884-fdd53155ff05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\data_layer\repositories">
+      <UniqueIdentifier>{116d1f7e-1cec-4360-a7da-cf96a9c76727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\data_layer\serializers">
+      <UniqueIdentifier>{cc6e52e7-15f8-4ab6-bb62-545b106d1e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\types">
+      <UniqueIdentifier>{85b5203d-de68-4f8f-9589-c59ee70a0cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\types">
+      <UniqueIdentifier>{de9f54e4-4ee7-4c47-8938-6bb6d377af01}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="subscriptionsapp.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="card_serializer.cpp">
+      <Filter>Source Files\data_layer\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="card_repository.cpp">
+      <Filter>Source Files\data_layer\repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="location_serializer.cpp">
+      <Filter>Source Files\data_layer\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="date_time.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="card_subs_history_serializer.cpp">
+      <Filter>Source Files\data_layer\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="card_subscription_serializer.cpp">
+      <Filter>Source Files\data_layer\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="subscription_serializer.cpp">
+      <Filter>Source Files\data_layer\serializers</Filter>
+    </ClCompile>
+    <ClCompile Include="card_subs_history_repository.cpp">
+      <Filter>Source Files\data_layer\repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="card_subscription_repository.cpp">
+      <Filter>Source Files\data_layer\repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="subscription_repository.cpp">
+      <Filter>Source Files\data_layer\repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="location_repository.cpp">
+      <Filter>Source Files\data_layer\repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="file_repository_uow.cpp">
+      <Filter>Source Files\data_layer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -44,19 +95,67 @@
     <ClInclude Include="serializer.h">
       <Filter>Header Files\data_layer\serializers</Filter>
     </ClInclude>
-    <ClInclude Include="file_provider.h">
-      <Filter>Header Files\data_layer</Filter>
-    </ClInclude>
     <ClInclude Include="card_serializer.h">
       <Filter>Header Files\data_layer\serializers</Filter>
     </ClInclude>
-    <ClInclude Include="repository_base.h">
-      <Filter>Header Files\data_layer\repositories</Filter>
+    <ClInclude Include="file_provider.h">
+      <Filter>Header Files\data_layer</Filter>
     </ClInclude>
     <ClInclude Include="card_repository.h">
       <Filter>Header Files\data_layer\repositories</Filter>
     </ClInclude>
+    <ClInclude Include="repository_base.h">
+      <Filter>Header Files\data_layer\repositories</Filter>
+    </ClInclude>
     <ClInclude Include="repository_uow.h">
+      <Filter>Header Files\data_layer</Filter>
+    </ClInclude>
+    <ClInclude Include="file_repository_uow.h">
+      <Filter>Header Files\data_layer</Filter>
+    </ClInclude>
+    <ClInclude Include="location.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="date_time.h">
+      <Filter>Header Files\types</Filter>
+    </ClInclude>
+    <ClInclude Include="subscription.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="location_serializer.h">
+      <Filter>Header Files\data_layer\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_base.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="card_subscription.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="card_subs_history.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="subscription_serializer.h">
+      <Filter>Header Files\data_layer\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="card_subscription_serializer.h">
+      <Filter>Header Files\data_layer\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="card_subs_history_serializer.h">
+      <Filter>Header Files\data_layer\serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="subscription_repository.h">
+      <Filter>Header Files\data_layer\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="card_subscription_repository.h">
+      <Filter>Header Files\data_layer\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="card_subs_history_repository.h">
+      <Filter>Header Files\data_layer\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="test_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="location_repository.h">
       <Filter>Header Files\data_layer</Filter>
     </ClInclude>
   </ItemGroup>

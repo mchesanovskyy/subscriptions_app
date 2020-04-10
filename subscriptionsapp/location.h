@@ -3,8 +3,9 @@
 
 #include "entity_base.h"
 
-class card : public entity_base
+class location : public entity_base
 {
 public:
-	std::string number;
+	std::string name;
 };
+
