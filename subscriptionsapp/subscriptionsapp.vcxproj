@@ -151,6 +151,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="app_settings_initializer.cpp" />
+    <ClCompile Include="app_setting_manager.cpp" />
     <ClCompile Include="card_repository.cpp" />
     <ClCompile Include="card_serializer.cpp" />
     <ClCompile Include="card_subscription_repository.cpp" />
@@ -166,6 +168,10 @@
     <ClCompile Include="subscription_serializer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="app_setting.h" />
+    <ClInclude Include="app_settings_initializer.h" />
+    <ClInclude Include="app_setting_keys.h" />
+    <ClInclude Include="app_setting_manager.h" />
     <ClInclude Include="card.h" />
     <ClInclude Include="card_repository.h" />
     <ClInclude Include="card_serializer.h" />
@@ -185,6 +191,7 @@
     <ClInclude Include="repository_base.h" />
     <ClInclude Include="repository_uow.h" />
     <ClInclude Include="serializer.h" />
+    <ClInclude Include="string_helpers.h" />
     <ClInclude Include="subscription.h" />
     <ClInclude Include="subscription_repository.h" />
     <ClInclude Include="subscription_serializer.h" />

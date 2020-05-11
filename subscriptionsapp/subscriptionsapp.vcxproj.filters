@@ -46,6 +46,12 @@
     <Filter Include="Source Files\types">
       <UniqueIdentifier>{de9f54e4-4ee7-4c47-8938-6bb6d377af01}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\tools">
+      <UniqueIdentifier>{19391825-d360-4a69-9a60-415bd9743606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tools\settings">
+      <UniqueIdentifier>{6c104dcf-fff7-4ed2-80ac-98e37064ca1d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="subscriptionsapp.cpp">
@@ -86,6 +92,12 @@
     </ClCompile>
     <ClCompile Include="file_repository_uow.cpp">
       <Filter>Source Files\data_layer</Filter>
+    </ClCompile>
+    <ClCompile Include="app_setting_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="app_settings_initializer.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -156,7 +168,22 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="location_repository.h">
-      <Filter>Header Files\data_layer</Filter>
+      <Filter>Header Files\data_layer\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="app_setting.h">
+      <Filter>Header Files\tools\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="app_setting_manager.h">
+      <Filter>Header Files\tools\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="string_helpers.h">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="app_setting_keys.h">
+      <Filter>Header Files\tools\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="app_settings_initializer.h">
+      <Filter>Header Files\tools\settings</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

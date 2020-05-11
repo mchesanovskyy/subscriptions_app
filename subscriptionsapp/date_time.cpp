@@ -1,12 +1,8 @@
 #include "date_time.h"
 
+//2020-04-10T10:33:25
 string date_time::format_{"%Y-%m-%dT%H:%M:%S"};
 
-ostream& operator <<(ostream& lhs, const date_time& dt)
-{
-	lhs << dt.to_string();
-	return lhs;
-}
 
 tm* date_time::parse_str(const string value)
 {
@@ -14,6 +10,12 @@ tm* date_time::parse_str(const string value)
 	auto t = new tm;
 	ss >> get_time(t, format_.c_str());
 	return t;
+}
+
+ostream& operator<<(ostream& lhs, const date_time& dt)
+{
+	lhs << dt.to_string();
+	return lhs;
 }
 
 date_time::date_time()

@@ -47,4 +47,6 @@ private:
 	static tm* parse_str(string value);
 };
 
+ostream& operator<<(ostream& lhs, const date_time& dt);
+
 #endif
