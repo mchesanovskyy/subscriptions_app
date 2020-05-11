@@ -9,16 +9,30 @@
 using namespace std;
 
 
+void init_test_data()
+{
+	// create an instance of Repository UnitOfWork
+	repository_uow* repositories = new file_repository_uow;
+
+	// Create an instance of test_data class.
+	// The test_data class takes the instance of repository_uow in constructor.
+	test_data test(repositories);
+
+	// Populate default values if no data
+	test.run();
+
+	// Display all collections
+	test.show();
+}
+
 int main()
 {
 	// CHECK APP SETTINGS
 	// add default values for required app settings if they are missed
 	app_settings_initializer app_settings_initializer;
 	app_settings_initializer.check_and_init_settings();
-	
-	repository_uow* repositories = new file_repository_uow;
-	
-	test_data test(repositories);
-	test.run();
-	test.show();
+
+	// For testing purposes.
+	// The method sets default values for all existing collections
+	init_test_data();
 }
