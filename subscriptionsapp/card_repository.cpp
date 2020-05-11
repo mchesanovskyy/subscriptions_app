@@ -1,6 +1,7 @@
 #include  "card_repository.h"
 
-card_repository::card_repository(file_provider<card>* provider): repository_base(provider)
+card_repository::card_repository(file_provider<card>* provider, int_id_tracker* tracker)
+	: repository_base(provider, tracker)
 {
 }
 

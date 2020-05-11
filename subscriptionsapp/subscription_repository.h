@@ -5,8 +5,8 @@
 class subscription_repository : public repository_base<subscription>
 {
 public:
-	subscription_repository(file_provider<subscription>* provider)
-		: repository_base<subscription>(provider)
+	subscription_repository(file_provider<subscription>* provider, int_id_tracker* tracker)
+		: repository_base<subscription>(provider, tracker)
 	{
 		
 	}

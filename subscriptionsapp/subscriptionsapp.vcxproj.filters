@@ -52,6 +52,15 @@
     <Filter Include="Header Files\tools\settings">
       <UniqueIdentifier>{6c104dcf-fff7-4ed2-80ac-98e37064ca1d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\tools">
+      <UniqueIdentifier>{59362799-1e30-40af-bd79-667becfa9c8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tools\settings">
+      <UniqueIdentifier>{ea658322-f809-4f97-8c5c-1567ecdbc4d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tools\IdTracker">
+      <UniqueIdentifier>{eed6a7f2-b48c-4f69-b9ee-6470aee278be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="subscriptionsapp.cpp">
@@ -94,9 +103,15 @@
       <Filter>Source Files\data_layer</Filter>
     </ClCompile>
     <ClCompile Include="app_setting_manager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\tools\settings</Filter>
     </ClCompile>
     <ClCompile Include="app_settings_initializer.cpp">
+      <Filter>Source Files\tools\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="location_service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="default_id_tracker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -184,6 +199,21 @@
     </ClInclude>
     <ClInclude Include="app_settings_initializer.h">
       <Filter>Header Files\tools\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="service_base.h">
+      <Filter>Header Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="location_service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="id_tracker.h">
+      <Filter>Header Files\tools\IdTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="int_id_tracker.h">
+      <Filter>Header Files\tools\IdTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="default_id_tracker.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

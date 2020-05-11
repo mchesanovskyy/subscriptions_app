@@ -5,8 +5,8 @@
 class card_subs_history_repository : public repository_base<card_subs_history>
 {
 public:
-	explicit card_subs_history_repository(file_provider<card_subs_history>* provider)
-		: repository_base<card_subs_history>(provider)
+	explicit card_subs_history_repository(file_provider<card_subs_history>* provider, int_id_tracker* tracker)
+		: repository_base<card_subs_history>(provider, tracker)
 	{
 		
 	}

@@ -114,7 +114,6 @@ private:
 		h->card_subscription_id = 12;
 		h->created_at = date_time::now();
 		h->units_used = 1;
-		h->id = 4;
 
 		repo->add(h);
 	}
@@ -128,7 +127,6 @@ private:
 		}
 
 		auto cs = new card_subscription;
-		cs->id = 12;
 		cs->card_id = 1;
 		cs->subscription_id = 1;
 		cs->effective_from = &date_time::now();
@@ -148,7 +146,6 @@ private:
 		}
 
 		auto c = new card;
-		c->id = 1;
 		c->number = "1234567890";
 
 		repo->add(c);
@@ -163,7 +160,6 @@ private:
 		}
 
 		auto s = new subscription;
-		s->id = 1;
 		s->name = "pay as you go";
 		s->effective_from = &date_time::parse("2020-03-04T10:00:00");
 		s->effective_to = &date_time::parse("2021-03-04T20:59:59");
@@ -183,7 +179,6 @@ private:
 		}
 
 		auto l = new location;
-		l->id = 1;
 		l->name = "gym";
 		repo->add(l);
 	}

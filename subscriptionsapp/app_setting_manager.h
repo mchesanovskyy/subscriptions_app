@@ -25,6 +25,8 @@ public:
 		save_and_reload();
 	}
 
+	void add_or_update_value(const string& key, const string& value);
+
 	string get_value(string key)
 	{
 		const auto setting = find(std::move(key));
@@ -32,7 +34,7 @@ public:
 			? ""
 			: setting->value;
 	}
-	
+
 private:
 	string file_name_ = "settings.config";
 
@@ -51,20 +53,20 @@ private:
 
 	std::vector<app_setting*>& get_settings()
 	{
-		if(settings_.empty())
+		if (settings_.empty())
 		{
 			load_settings();
 		}
-		
+
 		return settings_;
 	}
-	
+
 	void save_and_reload()
 	{
 		save_settings();
 		load_settings();
 	}
-	
+
 	void save_settings()
 	{
 		ofstream writer;
@@ -90,7 +92,10 @@ private:
 				vector<string> parts = split(line, '|');
 				auto* u = new app_setting;
 				u->key = parts[0];
-				u->value = parts[1];
+				u->value = (parts.size() > 1) 
+					? parts[1]
+					: "";
+				
 				settings_.push_back(u);
 			}
 			myfile.close();
